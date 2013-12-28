@@ -1,0 +1,196 @@
+﻿% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass[a4paper,12pt]{report}
+
+%本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。
+
+\usepackage{amsmath}% Primary package, provides various features for displayed equations and other mathematical constructs.
+\usepackage{amstext}% Provides a \text command for typesetting a fragment of text inside a display.
+\usepackage{amsopn}% Provides \DeclareMathOperator for defining new ‘operator names?like \sin and \lim.
+\usepackage{amsbsy}% For backward compatibility this package continues to exist but use of the newer bm package that comes with LATEX is recommended instead.
+\usepackage{amscd}% Provides a CD environment for simple commutative diagrams (no support for diagonal arrows).
+\usepackage{amsxtra}% Provides certain odds and ends such as \fracwithdelims and \accentedsymbol,for compatibility with documents created using version 1.1.
+\usepackage{mathrsfs}
+%\usepackage[top=3cm,bottom=3cm,left=3cm,right=2cm]{geometry}
+%中文支持方式1
+\usepackage[cap,UTF8]{ctex}
+%\usepackage{savesym}
+\usepackage{booktabs} %booktabs
+\usepackage{float}%unfloat floatbodies
+\usepackage{textcomp}
+%中文支持方式2
+%\usepackage{xeCJK}
+%\setCJKmainfont[BoldFont=Adobe Heiti Std, ItalicFont=Adobe Kaiti Std]{Adobe Song Std}
+%\setCJKmonofont{KaiTi}
+\usepackage[all]{xy}
+\usepackage{hyperref}
+%\hypersetup{hyperfigures=false}
+
+\renewcommand{\tablename}{表}
+\renewcommand{\figurename}{图}
+\renewcommand{\chaptername}{}
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\everymath{\displaystyle}
+% info of the doc
+\author{翟羽 \\ 吉林大学化学学院 2011级3班 33110304}
+\title{从微藻到生物柴油：\emph{可行性研究报告}\\Biodiesel from Microalgae: \\ \emph{the feasibility study report}}
+\date{}
+\maketitle
+%\makeindex
+%\titlepage
+%\newpage
+\renewcommand{\contentsname}{目录}
+\tableofcontents
+\chapter{立项依据}
+\section{全球能源、环境背景与市场需求}
+据估计，2008年世界总能耗达到了113亿吨石油当量。其中，化石燃料占了$88 \%$,核能占$5\%$，水电占$6\% $。将未来的技术发展、能源消耗发展、非传统能源消耗以及地缘政治因素都算在内，我们可以预见：在短时间内，化石燃料必然还会在总能源消耗中占绝对优势的比重。\cite{BP2009,EU2007}然而，化石燃料的使用对于气候变化等问题的负面影响是有目共睹的\cite{Brennan2010}。
+
+全球性的能源短缺与环境恶化愈发严重，保护人类赖以生存的自然环境成为当务之急。由于对自然环境影响较大，汽车的改良显得尤为重要。世界各国的能源研究人员从环境保护和资源战略的角度出发，积极探索发展替代燃料及可再生能源，生物柴油就是其中一种。\cite{Zhu2004}
+
+生物柴油（biodiesel）通常被定义为脂肪酸甲酯，是一种含氧的清洁燃料，可由可再生油脂制取加工而成。生物柴油作为化石燃料的替代品, 与化石柴油及燃料乙醇等其他液体燃料相比,有着突出的特性: 生物柴油不含石蜡, 闪点高, 燃烧性能和效率要高于普通柴油, 使用时更安全; 不像乙醇混合燃料那样容易吸水，降低燃烧效率。\cite{Song2008}生物柴油产业在我国具有巨大的发展潜力，并将对保障石油安全、保护生态环境、促进农业和制造业发展、提高农民收入，产生相当重要的积极作用。\cite{Zhu2004}。
+
+迄今为止，国内外学者已经发展了多种生物柴油制备方法。然而，第一代生物质燃料普遍存在“汽车与人畜抢粮”的尴尬：为了发展生物质燃料，消耗了人畜口粮、饲料，引发了粮食危机。\cite{FAO2007,FAO2008}第二代生物质燃料则克服了上述问题。可见，发展以全能源作物制备生物质能源的第二代生物质燃料是当前生物质开发利用领域的必然趋势。\cite{Brennan2010,Schenk2008}微藻转化生物柴油就具有第二代生物质燃料的优势\cite{Brennan2010}。
+
+\section{微藻的获得}
+\label{much}
+藻类是最低等的、自养的放氧植物，分布极其广泛。微藻是指一些微观的单细胞、群体或丝状的藻类，大多数是浮游藻类，生物量大、分布广。微藻可以通过热解生产生物燃料。\cite{Miao2003}
+
+要使藻类热解生产燃料实现工程化、商业化，就必须保证藻类原料的充分供应。在我国的内陆湖泊中，有着巨大的藻类生物量可供回收利用。以太湖为例，其年均浮游藻类生物量约为5.855 $\mathrm{mg/L}$，每年可从太湖获得约2.6万吨藻类生物量。我国的第5大湖——巢湖，也是一个富营养化湖泊，并已向极富营养化趋势发展，据估计，每年从巢湖中提取蓝藻1万吨，相当于从湖水中提取出3 000 吨碳、860 吨氮和120吨磷。由此可见，利用天然的富营养化的湖泊中的藻类可以一方面实现本项目原料供应，另一方面可以实现富营养化湖泊的治理。\cite{Miao2003}
+
+此外，微藻的集中养殖也是可行的方案。微藻含有丰富的营养成分且易于被人体及动物吸收，除用作食品和饲料外，还可从中提取出许多有药用价值或化工用途的物质，因而微藻的开发与利用受到世界各国的普遍重视，微藻养殖与加工业已成为一门新兴产业。然而，微藻养殖的效率依然有待提高。\cite{Miao2003}最近，Eroglu等提出，开发出纳米粒子系统，通过光学纳米过滤器改变藻类所吸收的光波长度，提高微藻光合色素，即叶绿素的形成和产量。\cite{Eroglu2013}这或为增产之良方。
+
+
+\chapter{国内外研究现状及分析}
+
+
+中国人口众多，人均耕地面积远低于世界平均水平, 中国食用植物油脂的缺口较大。因此政府首先要保证有足够的粮油等食物供应。这和资本主义发达国家的情况十分不同。\cite{Song2008}
+
+2003 年1月, 中国工程科学院组织各领域专家在北京召开了“生物柴油植物原料发展研讨会”。这次会议的召开已成为我国生物柴油原料产业发展的重要里程碑。2006 年11 月12 日由中国工程院主办的“二〇〇六中国生物质能源发展战略论坛” 已确定我国生物能源的发展方针: 中国生物能源将以非粮作物为主, 国家将采取各种优惠的财税政策, 推进中国生物质能源的快速发展。\cite{Song2008}
+
+微藻由于在节\ref{much}中所提及的原因，完全符合2006年的会议精神。国内外对于微藻制备生物柴油成为了研究热点。
+
+研究大体分为以下几个方向：
+
+\section{高油脂微藻的研究进展}
+
+微藻除在节\ref{much}中提及的可以从自然环境中获取以外，人工培育是十分重要的方式。对于微藻这样的单细胞生物，传统的农业方法已无法满足增产及提高出油率的需求。基因工程手段已经成为研究的主流方案。
+
+美国能源部1978 年就立项利用藻类制备生物柴油的研发工作, 从海洋和湖泊中分离了3000 多种藻类, 从中筛选出300 多种生长快、含油高的硅藻、绿藻和蓝藻等藻种。经过驯化, 其中一些藻类的光合生产率已经达到50 $\mathrm{g\cdot m^{−2}\cdot d^{−1}}$, 含油率达到80$\%$\cite{FB1996,Schenk2008}。采用生理生化的调控方法如降低培养液中的氮和硅含量提高了油藻的含油率, 但是光合作用受阻、生长速度减缓。以上研究未能深入到基因水平, 未采用藻类基因工程来提高藻类的油脂含量。而当时医药和农业的发展已证明, 仅立足于经典科学的研发模式, 难以取得跨越性进展。\cite{Song2008}
+
+美国再生能源国家实验室(National Renewable Energy Laboratory, NREL)于1991 年开展了有关基因工程构建高油微藻的工作。他们起初想转化绿藻, 但未能成功; 后来改为转化硅藻, 并于1995 年将ACCase 基因转化小环藻成功, 这是一个重要突破。\cite{DunahayTG1995,PG1993}宋东辉等开展ACCase 调控微藻脂肪酸合成能力的研究, 目前正在筛选转化ACC 基因的丝状体微藻。\cite{Song2008}
+
+对脂类代谢而言, ACCase 和PEPC 的相对活性影响着脂类代谢途径的走向, 即:丙酮酸合成后, ACCase 催化底物乙酸辅酶A 进入脂肪酸合成途径; 乙酸辅酶A 的浓度累积激活PEPC,催化丙酮酸合成草酸乙酸进入氨基酸生物合成途径。抑制PEPC 活性有助于提高ACCase 催化底物进入脂肪酸途径。\cite{Song2008} PEPC活性抑制已有人报道。
+
+此外，通过光学调控方式提高微藻油脂产量也是十分热门的研究方向。纳米金属浊液受光照激发，其发射波长正处于微藻特异性吸收波长范围。将金银纳米微粒布于微藻的生长环境中，使微藻特异地吸收对应波长的电磁波，可以有效的提高自然光的利用率。这一技术可以有效提高微藻产量。\cite{Eroglu2013}然而，金属纳米颗粒难于获得成为这一技术应用的瓶颈。
+
+\section{微藻中油脂的转化技术}
+
+将藻类转换成液体燃料的研究始于20世纪80年代中期，当时人们通常采用酯化反应和催化裂解反应将藻细胞内的脂类转化为汽油和柴油。这种方法受低温限制，且所得产物性能受脂类组成的影响很大， 而且要求藻类的脂类含量要很高，否则难以获得经济效益。后来人们又采用热解的方法将微藻转化为燃料。由于热解油易于贮运，且能量密度高，而且氮、硫含量低，因此热解油的生产受到越来越多的关注，以微藻快速热解获取液体燃料将具有更广阔的发展前景。\cite{Miao2003}
+
+对微藻热解的研究结果表明，微藻热解油的C、H含量高于木材热解油，而O含量则低于木材热解油，因此微藻热解油的热值高，是木材的1.6倍, 且较木材热解油稳定。微藻热解油在 $ 35^\circ \mathrm{C}$以下具有很好的流动性，可直接作为民用燃料和内燃机燃料，或深加工为汽油和柴油。热解油中还含有多种通过常规石油化工合成路线不易合成的物质，可从中提取高附加值的化工产品或具有药用价值的活性成分。\cite{Miao2003}
+
+\chapter{项目的研究内容、研究目标以及拟解决的关键问题}
+\section{研究内容}
+
+本项目的研究内容主要分为以下几个方面。
+\subsection{微藻的驯化与培育}
+在国内外同行的基础之上，进一步寻找繁殖速度快、产油量高、油脂品级优的微藻品种，并实现其繁育的稳定与高效。在此基础上，进一步的确定微藻的最优生长条件与核心技术问题，为大规模的微藻养殖奠定基础。
+
+我们需要将传统生物方法和现代基因工程方法结合起来，将高产油料作物的相关基因片段接到微藻的基因中，从而有效的从根本上提高微藻油脂的产率。
+
+\subsection{微藻油脂向生物柴油的转化}
+热解方法事实上已经成为了业界的主流转化方法。我们在确定微藻品种的基础上，通过正交实验设计的方法，寻找热解的最优温度和生产条件。
+
+有关木质——纤维素材料的热解结果表明，虽然通过调整反应条件可使热解油产量最大化，但通常油的质量并非最好。\cite{Miao2003}所以，我们要在油质量和产量之间找到一个平衡点，使在保证质量的情况下提高产量并实现有效的控制，能够定向的生产出特定要求的液体油产品。这就要求我们在实验基础上提出液体油的质量水平和产量水平关于热解温度和条件的经验公式，从而指导实际生产。
+
+\section{研究目标}
+\begin{enumerate}
+	\item  找到高产量的微藻品种。
+	\item   寻找最优转化条件。
+	\item   提出产品质量、产量关于生产条件的经验公式。
+	\item   校企合作，联合建立小型生产线探究实际生产的经验并解决出现的问题。
+	\item    扩大生产规模，批量生产并盈利。
+\end{enumerate}
+
+\section{拟解决的关键问题}
+虽然微藻这类生物生命力极其顽强，但是依然不能避免的会有传染病暴发问题。如何妥善的解决这类问题是实现微藻大规模养殖的关键。此外，产品质量和产量这一对矛盾体的关系是本研究的关键。定向生产目标产品是必须要解决的一个问题。
+
+\chapter{拟采取的研究方案及可行性分析}
+
+\section{实验方法}
+\begin{enumerate}
+	\item 按照文献中给出的优势品种，进一步寻找产油量高的亚种。
+	\item 设计正交实验，寻找微藻适宜生长的最优条件。相关因子包括：
+		\begin{itemize}
+			\item 温度
+			\item pH
+			\item 氧气溶解量
+			\item 二氧化碳溶解量
+		\end{itemize}
+		\item 选择最佳产油亚种，实验室条件下探究最佳热解条件。
+		\begin{itemize}
+			\item 分析产品组成，总结经验公式。
+		\end{itemize}
+		\item 搭建小型生产线，工业条件下探究最佳热解条件。
+		\begin{itemize}
+			\item 分析产品组成，修正上述经验公式。
+		\end{itemize}
+
+\end{enumerate}
+
+\section{可行性分析}
+本项目具有丰厚的文献支持和技术支持，类似的项目在国内已有投产，经过简单的技术改进，降低成本、提高产量和质量，做到定向生产，可以获得较高的经济效益和环境效益。其可行性较强。
+
+\chapter{年度计划及预期研究成果}
+\section{年度研究计划}
+表\ref{plan}中列出了年度研究计划。
+\begin{table}[H]%
+\centering
+\begin{tabular}{cl}
+\toprule
+年&\multicolumn{1}{c}{研究计划}\\
+\midrule
+2014&寻求最优微藻亚种并进行培育条件的探索。\\
+2015&热解条件的探索工作。重点提出经验公式形式并得到拟合成果。\\
+2016&工业实践条件的试运行，修正经验公式，编制控制程序，自动化生产。\\
+2017&正式投产，跟踪研究，解决大规模生产条件下出现的一系列新问题。\\
+\bottomrule
+
+\end{tabular}
+\caption{年度研究计划}
+\label{plan}
+\end{table}
+
+\section{预期成果}
+获得国家发明专利2项，发表学术论文1篇，项目建成投产。
+
+
+
+
+
+
+
+
+
+%参考文献
+%如果文档类是article之类的, 用\renewcommand\refname{参考文献}
+%如果文档类是book之类的, 用\renewcommand\bibname{参考文献}
+\renewcommand\bibname{参考文献}
+\bibliographystyle{jacs}
+\bibliography{bib}
+
+
+%\href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{\includegraphics[width=2cm]{ccbyncsa.png}}本作品采用\href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{知识共享署名-非商业性使用-相同方式共享4.0 国际许可协议}进行许可。
+%\  \\
+%\	\\
+%\	\\
+%
+%\includegraphics[width=2cm]{ccbyncsa.png}本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。
+
+
+\end{document}
