@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>E:\Private\zhaiyu-zhaiyu.github.io\pref\_vimrc.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="vim">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="evening_2">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #ffffff; background-color: #333333; }
+body { font-family: monospace; color: #ffffff; background-color: #333333; }
+* { font-size: 1em; }
+.Statement { color: #ffff60; font-weight: bold; }
+.PreProc { color: #ff80ff; }
+.Type { color: #60ff60; font-weight: bold; }
+.Special { color: #ffa500; background-color: #0d0d0d; padding-bottom: 1px; }
+.LineNr { color: #ffff00; background-color: #1a1a1a; padding-bottom: 1px; }
+.Comment { color: #cccccc; font-style: italic; }
+.Constant { color: #ffa0a0; background-color: #0d0d0d; padding-bottom: 1px; }
+.Identifier { color: #40ffff; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr">  1 </span><span class="Comment">&quot; Language settings</span>
+<span id="L2" class="LineNr">  2 </span><span class="Statement">set</span> <span class="PreProc">fileencodings</span>=ucs-bom<span class="Statement">,</span>utf-8<span class="Statement">,</span>cp936<span class="Statement">,</span>gb18030<span class="Statement">,</span>big5<span class="Statement">,</span>euc-jp<span class="Statement">,</span>euc-kr<span class="Statement">,</span>latin1
+<span id="L3" class="LineNr">  3 </span><span class="Statement">set</span> <span class="PreProc">encoding</span>=utf-8
+<span id="L4" class="LineNr">  4 </span><span class="Statement">set</span> <span class="PreProc">termencoding</span>=cp936
+<span id="L5" class="LineNr">  5 </span><span class="Statement">language</span> <span class="Statement">messages</span> <span class="Statement">z</span>h_CN<span class="Statement">.</span>UTF<span class="Statement">-</span><span class="Constant">8</span>
+<span id="L6" class="LineNr">  6 </span>
+<span id="L7" class="LineNr">  7 </span><span class="Statement">if</span> <span class="Identifier">v:progname</span> <span class="Statement">=~?</span> <span class="Constant">&quot;evim&quot;</span>
+<span id="L8" class="LineNr">  8 </span>  <span class="Statement">finish</span>
+<span id="L9" class="LineNr">  9 </span><span class="Statement">endif</span>
+<span id="L10" class="LineNr"> 10 </span>
+<span id="L11" class="LineNr"> 11 </span><span class="Comment">&quot; Use Vim settings, rather than Vi settings (much better!).</span>
+<span id="L12" class="LineNr"> 12 </span><span class="Comment">&quot; This must be first, because it changes other options as a side effect.</span>
+<span id="L13" class="LineNr"> 13 </span><span class="Statement">set</span> <span class="PreProc">nocompatible</span>
+<span id="L14" class="LineNr"> 14 </span>
+<span id="L15" class="LineNr"> 15 </span><span class="Comment">&quot; allow backspacing over everything in insert mode</span>
+<span id="L16" class="LineNr"> 16 </span><span class="Statement">set</span> <span class="PreProc">backspace</span>=indent<span class="Statement">,</span>eol<span class="Statement">,</span>start
+<span id="L17" class="LineNr"> 17 </span>
+<span id="L18" class="LineNr"> 18 </span><span class="Statement">set</span> <span class="PreProc">nobackup</span>            <span class="Comment">&quot; do not keep a backup file, use versions instead</span>
+<span id="L19" class="LineNr"> 19 </span>
+<span id="L20" class="LineNr"> 20 </span><span class="Statement">set</span> <span class="PreProc">history</span>=50          <span class="Comment">&quot; keep 50 lines of command line history</span>
+<span id="L21" class="LineNr"> 21 </span><span class="Statement">set</span> <span class="PreProc">ruler</span>               <span class="Comment">&quot; show the cursor position all the time</span>
+<span id="L22" class="LineNr"> 22 </span><span class="Statement">set</span> <span class="PreProc">showcmd</span>             <span class="Comment">&quot; display incomplete commands</span>
+<span id="L23" class="LineNr"> 23 </span><span class="Statement">set</span> <span class="PreProc">incsearch</span>           <span class="Comment">&quot; do incremental searching</span>
+<span id="L24" class="LineNr"> 24 </span>
+<span id="L25" class="LineNr"> 25 </span><span class="Comment">&quot;</span> <span class="PreProc">For Win32 GUI:</span><span class="Comment"> remove 't' flag from 'guioptions': no tearoff menu entries</span>
+<span id="L26" class="LineNr"> 26 </span><span class="Comment">&quot; let &amp;guioptions = substitute(&amp;guioptions, </span><span class="Constant">&quot;t&quot;</span><span class="Comment">, </span><span class="Constant">&quot;&quot;</span><span class="Comment">, </span><span class="Constant">&quot;g&quot;</span><span class="Comment">)</span>
+<span id="L27" class="LineNr"> 27 </span>
+<span id="L28" class="LineNr"> 28 </span><span class="Comment">&quot; Don't use Ex mode, use Q for formatting</span>
+<span id="L29" class="LineNr"> 29 </span><span class="Statement">map</span> Q gq
+<span id="L30" class="LineNr"> 30 </span><span class="Statement">au</span> <span class="Type">GUIEnter</span> * <span class="Statement">simalt</span> ~<span class="Statement">x</span>
+<span id="L31" class="LineNr"> 31 </span>
+<span id="L32" class="LineNr"> 32 </span><span class="Comment">&quot; CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,</span>
+<span id="L33" class="LineNr"> 33 </span><span class="Comment">&quot; so that you can undo CTRL-U after inserting a line break.</span>
+<span id="L34" class="LineNr"> 34 </span><span class="Statement">inoremap</span> <span class="Special">&lt;</span><span class="Special">C-U</span><span class="Special">&gt;</span> <span class="Special">&lt;</span><span class="Special">C-G</span><span class="Special">&gt;</span>u<span class="Special">&lt;</span><span class="Special">C-U</span><span class="Special">&gt;</span>
+<span id="L35" class="LineNr"> 35 </span>
+<span id="L36" class="LineNr"> 36 </span><span class="Comment">&quot; In many terminal emulators the mouse works just fine, thus enable it.</span>
+<span id="L37" class="LineNr"> 37 </span><span class="Statement">if</span> <span class="Identifier">has</span><span class="Special">(</span><span class="Constant">'mouse'</span><span class="Special">)</span>
+<span id="L38" class="LineNr"> 38 </span>  <span class="Statement">set</span> <span class="PreProc">mouse</span>=a
+<span id="L39" class="LineNr"> 39 </span><span class="Statement">endif</span>
+<span id="L40" class="LineNr"> 40 </span>
+<span id="L41" class="LineNr"> 41 </span><span class="Comment">&quot; Switch syntax highlighting on, when the terminal has colors</span>
+<span id="L42" class="LineNr"> 42 </span><span class="Comment">&quot; Also switch on highlighting the last used search pattern.</span>
+<span id="L43" class="LineNr"> 43 </span><span class="Comment">&quot;if &amp;t_Co &gt; 2 || has(&quot;gui_running&quot;)</span>
+<span id="L44" class="LineNr"> 44 </span><span class="Comment">  &quot;syntax on</span>
+<span id="L45" class="LineNr"> 45 </span><span class="Comment">  &quot;set hlsearch</span>
+<span id="L46" class="LineNr"> 46 </span><span class="Comment">&quot;endif</span>
+<span id="L47" class="LineNr"> 47 </span>
+<span id="L48" class="LineNr"> 48 </span><span class="Comment">&quot; Only do this part when compiled with support for autocommands.</span>
+<span id="L49" class="LineNr"> 49 </span><span class="Statement">if</span> <span class="Identifier">has</span><span class="Special">(</span><span class="Constant">&quot;autocmd&quot;</span><span class="Special">)</span>
+<span id="L50" class="LineNr"> 50 </span>
+<span id="L51" class="LineNr"> 51 </span><span class="Comment">  &quot; Enable file type detection.</span>
+<span id="L52" class="LineNr"> 52 </span><span class="Comment">  &quot; Use the default filetype settings, so that mail gets 'tw' set to 72,</span>
+<span id="L53" class="LineNr"> 53 </span><span class="Comment">  &quot; 'cindent' is on in C files, etc.</span>
+<span id="L54" class="LineNr"> 54 </span><span class="Comment">  &quot; Also load indent files, to automatically do language-dependent indenting.</span>
+<span id="L55" class="LineNr"> 55 </span>  <span class="Statement">filetype</span> <span class="Type">plugin</span> <span class="Type">indent</span> <span class="Type">on</span>
+<span id="L56" class="LineNr"> 56 </span>
+<span id="L57" class="LineNr"> 57 </span><span class="Comment">  &quot; Put these in an autocmd group, so that we can delete them easily.</span>
+<span id="L58" class="LineNr"> 58 </span>  <span class="Statement">augroup</span> vimrcEx
+<span id="L59" class="LineNr"> 59 </span>  <span class="Statement">au</span>!
+<span id="L60" class="LineNr"> 60 </span>
+<span id="L61" class="LineNr"> 61 </span><span class="Comment">  &quot; For all text files set 'textwidth' to 78 characters.</span>
+<span id="L62" class="LineNr"> 62 </span>  <span class="Statement">autocmd</span> <span class="Type">FileType</span> text <span class="Statement">setlocal</span> textwidth<span class="Statement">=</span><span class="Constant">78</span>
+<span id="L63" class="LineNr"> 63 </span>
+<span id="L64" class="LineNr"> 64 </span><span class="Comment">  &quot; When editing a file, always jump to the last known cursor position.</span>
+<span id="L65" class="LineNr"> 65 </span><span class="Comment">  &quot; Don't do it when the position is invalid or when inside an event handler</span>
+<span id="L66" class="LineNr"> 66 </span><span class="Comment">  &quot; (happens when dropping a file on gvim).</span>
+<span id="L67" class="LineNr"> 67 </span><span class="Comment">  &quot; Also don't do it when the mark is in the first line, that is the default</span>
+<span id="L68" class="LineNr"> 68 </span><span class="Comment">  &quot; position when opening a file.</span>
+<span id="L69" class="LineNr"> 69 </span>  <span class="Statement">autocmd</span> <span class="Type">BufReadPost</span> *
+<span id="L70" class="LineNr"> 70 </span><span class="Special">    \</span> <span class="Statement">if</span> <span class="Identifier">line</span><span class="Special">(</span><span class="Constant">&quot;'\&quot;&quot;</span><span class="Special">)</span> <span class="Statement">&gt;</span> <span class="Constant">1</span> <span class="Statement">&amp;&amp;</span> <span class="Identifier">line</span><span class="Special">(</span><span class="Constant">&quot;'\&quot;&quot;</span><span class="Special">)</span> <span class="Statement">&lt;=</span> <span class="Identifier">line</span><span class="Special">(</span><span class="Constant">&quot;$&quot;</span><span class="Special">)</span> |
+<span id="L71" class="LineNr"> 71 </span><span class="Special">    \</span>   <span class="Statement">exe</span> <span class="Constant">&quot;normal! g`\&quot;&quot;</span> <span class="Statement">|</span>
+<span id="L72" class="LineNr"> 72 </span><span class="Special">    \</span> <span class="Statement">endif</span>
+<span id="L73" class="LineNr"> 73 </span>
+<span id="L74" class="LineNr"> 74 </span>  <span class="Statement">augroup</span> END
+<span id="L75" class="LineNr"> 75 </span>
+<span id="L76" class="LineNr"> 76 </span><span class="Statement">else</span>
+<span id="L77" class="LineNr"> 77 </span>
+<span id="L78" class="LineNr"> 78 </span>  <span class="Statement">set</span> <span class="PreProc">autoindent</span>                <span class="Comment">&quot; always set autoindenting on</span>
+<span id="L79" class="LineNr"> 79 </span>
+<span id="L80" class="LineNr"> 80 </span><span class="Statement">endif</span><span class="Comment"> &quot; has(&quot;autocmd&quot;)</span>
+<span id="L81" class="LineNr"> 81 </span>
+<span id="L82" class="LineNr"> 82 </span><span class="Comment">&quot; Convenient command to see the difference between the current buffer and the</span>
+<span id="L83" class="LineNr"> 83 </span><span class="Comment">&quot; file it was loaded from, thus the changes you made.</span>
+<span id="L84" class="LineNr"> 84 </span><span class="Comment">&quot; Only define it when not defined already.</span>
+<span id="L85" class="LineNr"> 85 </span><span class="Statement">if</span> !<span class="Identifier">exists</span><span class="Special">(</span><span class="Constant">&quot;:DiffOrig&quot;</span><span class="Special">)</span>
+<span id="L86" class="LineNr"> 86 </span>  <span class="Statement">command</span> <span class="Statement">DiffOrig</span> <span class="Statement">vert</span> <span class="Statement">new</span> | <span class="Statement">set</span> <span class="PreProc">bt</span>=nofile | r ++edit # | 0d_ | diffthis
+<span id="L87" class="LineNr"> 87 </span><span class="Special">                  \</span> | <span class="Statement">wincmd</span> <span class="Statement">p</span> | <span class="Statement">diffthis</span>
+<span id="L88" class="LineNr"> 88 </span><span class="Statement">endif</span>
+<span id="L89" class="LineNr"> 89 </span>
+<span id="L90" class="LineNr"> 90 </span><span class="Comment">&quot; ----------------------------------------------------------------------</span>
+<span id="L91" class="LineNr"> 91 </span><span class="Comment">&quot;  ---------------------------------------------------------------------</span>
+<span id="L92" class="LineNr"> 92 </span><span class="Comment">&quot; The following content was set by Y. Zhai</span>
+<span id="L93" class="LineNr"> 93 </span>
+<span id="L94" class="LineNr"> 94 </span><span class="Statement">set</span> <span class="PreProc">go</span>=m                        <span class="Comment">&quot; only show the menu in the GUI</span>
+<span id="L95" class="LineNr"> 95 </span>
+<span id="L96" class="LineNr"> 96 </span><span class="Statement">set</span> <span class="PreProc">colorcolumn</span>=80              <span class="Comment">&quot;set a highlight at c.80 for most condition</span>
+<span id="L97" class="LineNr"> 97 </span>
+<span id="L98" class="LineNr"> 98 </span><span class="Statement">syntax</span> <span class="Type">on</span>
+<span id="L99" class="LineNr"> 99 </span>
+<span id="L100" class="LineNr">100 </span><span class="Statement">colorscheme</span> evening_2
+<span id="L101" class="LineNr">101 </span><span class="Comment">&quot;colorscheme github</span>
+<span id="L102" class="LineNr">102 </span><span class="Comment">&quot;set guifont=courier\ new:h10</span>
+<span id="L103" class="LineNr">103 </span><span class="Comment">&quot;set guifont=DejaVu\ Sans\ Mono:h10</span>
+<span id="L104" class="LineNr">104 </span><span class="Statement">set</span> <span class="PreProc">guifont</span>=Consolas<span class="Statement">:</span>h10
+<span id="L105" class="LineNr">105 </span><span class="Comment">&quot;set guifont=monofur:h10.5</span>
+<span id="L106" class="LineNr">106 </span>
+<span id="L107" class="LineNr">107 </span><span class="Statement">set</span> <span class="PreProc">number</span>
+<span id="L108" class="LineNr">108 </span>
+<span id="L109" class="LineNr">109 </span><span class="Comment">&quot;set foldmethod=syntax</span>
+<span id="L110" class="LineNr">110 </span>
+<span id="L111" class="LineNr">111 </span><span class="Statement">set</span> <span class="PreProc">diffexpr</span>=MyDiff()
+<span id="L112" class="LineNr">112 </span>
+<span id="L113" class="LineNr">113 </span><span class="Statement">function</span> MyDiff<span class="Special">()</span>
+<span id="L114" class="LineNr">114 </span>  <span class="Statement">let</span> <span class="Identifier">opt</span> <span class="Statement">=</span> <span class="Constant">'-a --binary '</span>
+<span id="L115" class="LineNr">115 </span>  <span class="Statement">if</span> &amp;diffopt <span class="Statement">=~</span> <span class="Constant">'icase'</span> | <span class="Statement">let</span> <span class="Identifier">opt</span> <span class="Statement">=</span> <span class="Statement">opt</span> <span class="Statement">.</span> <span class="Constant">'-i '</span> | <span class="Statement">endif</span>
+<span id="L116" class="LineNr">116 </span>  <span class="Statement">if</span> &amp;diffopt <span class="Statement">=~</span> <span class="Constant">'iwhite'</span> | <span class="Statement">let</span> <span class="Identifier">opt</span> <span class="Statement">=</span> <span class="Statement">opt</span> <span class="Statement">.</span> <span class="Constant">'-b '</span> | <span class="Statement">endif</span>
+<span id="L117" class="LineNr">117 </span>  <span class="Statement">let</span> <span class="Identifier">arg1</span> <span class="Statement">=</span> <span class="Identifier">v:fname_in</span>
+<span id="L118" class="LineNr">118 </span>  <span class="Statement">if</span> arg1 <span class="Statement">=~</span> <span class="Constant">' '</span> | <span class="Statement">let</span> <span class="Identifier">arg1</span> <span class="Statement">=</span> <span class="Constant">'&quot;'</span> <span class="Statement">.</span> arg1 <span class="Statement">.</span> <span class="Constant">'&quot;'</span> | <span class="Statement">endif</span>
+<span id="L119" class="LineNr">119 </span>  <span class="Statement">let</span> <span class="Identifier">arg2</span> <span class="Statement">=</span> <span class="Identifier">v:fname_new</span>
+<span id="L120" class="LineNr">120 </span>  <span class="Statement">if</span> arg2 <span class="Statement">=~</span> <span class="Constant">' '</span> | <span class="Statement">let</span> <span class="Identifier">arg2</span> <span class="Statement">=</span> <span class="Constant">'&quot;'</span> <span class="Statement">.</span> arg2 <span class="Statement">.</span> <span class="Constant">'&quot;'</span> | <span class="Statement">endif</span>
+<span id="L121" class="LineNr">121 </span>  <span class="Statement">let</span> <span class="Identifier">arg3</span> <span class="Statement">=</span> <span class="Identifier">v:fname_out</span>
+<span id="L122" class="LineNr">122 </span>  <span class="Statement">if</span> arg3 <span class="Statement">=~</span> <span class="Constant">' '</span> | <span class="Statement">let</span> <span class="Identifier">arg3</span> <span class="Statement">=</span> <span class="Constant">'&quot;'</span> <span class="Statement">.</span> arg3 <span class="Statement">.</span> <span class="Constant">'&quot;'</span> | <span class="Statement">endif</span>
+<span id="L123" class="LineNr">123 </span>  <span class="Statement">let</span> <span class="Identifier">eq</span> <span class="Statement">=</span> <span class="Constant">''</span>
+<span id="L124" class="LineNr">124 </span>  <span class="Statement">if</span> $VIMRUNTIME <span class="Statement">=~</span> <span class="Constant">' '</span>
+<span id="L125" class="LineNr">125 </span>    <span class="Statement">if</span> &amp;<span class="Statement">sh</span> <span class="Statement">=~</span> <span class="Constant">'\&lt;cmd'</span>
+<span id="L126" class="LineNr">126 </span>      <span class="Statement">let</span> <span class="Identifier">cmd</span> <span class="Statement">=</span> <span class="Constant">'&quot;&quot;'</span> <span class="Statement">.</span> $VIMRUNTIME <span class="Statement">.</span> <span class="Constant">'\diff&quot;'</span>
+<span id="L127" class="LineNr">127 </span>      <span class="Statement">let</span> <span class="Identifier">eq</span> <span class="Statement">=</span> <span class="Constant">'&quot;'</span>
+<span id="L128" class="LineNr">128 </span>    <span class="Statement">else</span>
+<span id="L129" class="LineNr">129 </span>      <span class="Statement">let</span> <span class="Identifier">cmd</span> <span class="Statement">=</span> <span class="Identifier">substitute</span><span class="Special">(</span><span class="PreProc">$VIMRUNTIME</span>, <span class="Constant">' '</span>, <span class="Constant">'&quot; '</span>, <span class="Constant">''</span><span class="Special">)</span> <span class="Statement">.</span> <span class="Constant">'\diff&quot;'</span>
+<span id="L130" class="LineNr">130 </span>    <span class="Statement">endif</span>
+<span id="L131" class="LineNr">131 </span>  <span class="Statement">else</span>
+<span id="L132" class="LineNr">132 </span>    <span class="Statement">let</span> <span class="Identifier">cmd</span> <span class="Statement">=</span> $VIMRUNTIME <span class="Statement">.</span> <span class="Constant">'\diff'</span>
+<span id="L133" class="LineNr">133 </span>  <span class="Statement">endif</span>
+<span id="L134" class="LineNr">134 </span>  <span class="Statement">silent</span> <span class="Statement">execute</span> <span class="Constant">'!'</span> <span class="Statement">.</span> <span class="Identifier">cmd</span> <span class="Statement">.</span> <span class="Constant">' '</span> <span class="Statement">.</span> <span class="Identifier">opt</span> <span class="Statement">.</span> <span class="Identifier">arg1</span> <span class="Statement">.</span> <span class="Constant">' '</span> <span class="Statement">.</span> <span class="Identifier">arg2</span> <span class="Statement">.</span> <span class="Constant">' &gt; '</span> <span class="Statement">.</span> <span class="Identifier">arg3</span> <span class="Statement">.</span> <span class="Identifier">eq</span>
+<span id="L135" class="LineNr">135 </span><span class="Statement">endfunction</span>
+<span id="L136" class="LineNr">136 </span>
+<span id="L137" class="LineNr">137 </span>
+<span id="L138" class="LineNr">138 </span><span class="Comment">&quot;powerline</span>
+<span id="L139" class="LineNr">139 </span><span class="Statement">set</span> <span class="PreProc">laststatus</span>=2
+<span id="L140" class="LineNr">140 </span> <span class="Statement">set</span> <span class="PreProc">t_Co</span>=256
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
