@@ -1,0 +1,13 @@
+# Site settings
+title: Y.'s Homepage
+email: zhaiyu.zhaiyu@live.cn
+description: > # this means to ignore newlines until "baseurl:"
+        To record the thoughts and sparks from my mind.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://zhaiyu-zhaiyu.github.io" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  zhaiyu-zhaiyu
+
+# Build settings
+markdown: kramdown
+highlighter: rouge

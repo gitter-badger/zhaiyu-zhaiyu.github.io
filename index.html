@@ -1,55 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="author" content="Y. Zhai">
-<meta charset="utf-8">
-<title>Homepage of Y.'s</title>
-<style>
-body{
-//	min-height:740px;
-    background: -webkit-radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
-    background:    -moz-radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
-    background:     -ms-radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
-    background:      -o-radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
-    background:         radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
-background-attachment:fixed
-}
-#content{
-	padding:5% 10% 0% 10%;
-	margin:0% 10% 0% 10%;
-	position:absolute top;
-//	background:lightgray;
-}
-#aboutMe{
-	//padding-top:100px;
-	border:darkgray dotted;
-	min-height:15ex;
-}
-img{
-	margin:10px;
-	padding:5px;
-	background-color:white;
-}
-#myPhoto{
-	position:relative;
-	top:-60px;
-}
+---
+layout: default
+---
 
-h1,h2,h3,h4,h5,h6{
-	text-shadow:2px 2px 2px #888888;
-}
-</style>
-</head>
-<body>
-<div id="content">
-<div id="aboutMe">
-<img id ="myPhoto" src="img/me.jpg" height=150px align="left" />
-<h1>About me</h1>
-<p>My name is Yu Zhai, in Chinese "翟羽".  I was born in 1993 at Huaiyin, PRChina.  Now I live in Changchun, PRChina, studying and working in Jilin University, interested in Theoretical Chemistry.  What I believe is that science and art save the world.  </p>
-</div>
-</div>
+<div class="home">
 
-</body>
-</html>
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
