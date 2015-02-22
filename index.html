@@ -7,18 +7,36 @@
 <meta charset="utf-8">
 <title>Homepage of Y.'s</title>
 <style>
-html{background-color:black;
+body{
+//	min-height:740px;
+    background: -webkit-radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
+    background:    -moz-radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
+    background:     -ms-radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
+    background:      -o-radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
+    background:         radial-gradient(bottom,rgb(250, 250, 250), rgb(150, 150, 150));
+background-attachment:fixed
 }
 #content{
-	padding:5%;
-	margin:10%;
-	background:lightgray;
+	padding:5% 10% 0% 10%;
+	margin:0% 10% 0% 10%;
+	position:absolute top;
+//	background:lightgray;
+}
+#aboutMe{
+	//padding-top:100px;
+	border:darkgray dotted;
+	min-height:15ex;
 }
 img{
 	margin:10px;
 	padding:5px;
 	background-color:white;
 }
+#myPhoto{
+	position:relative;
+	top:-60px;
+}
+
 h1,h2,h3,h4,h5,h6{
 	text-shadow:2px 2px 2px #888888;
 }
@@ -27,7 +45,7 @@ h1,h2,h3,h4,h5,h6{
 <body>
 <div id="content">
 <div id="aboutMe">
-<img src="img/me.jpg" width=150px height=150px align="left"/>
+<img id ="myPhoto" src="img/me.jpg" height=150px align="left" />
 <h1>About me</h1>
 <p>My name is Yu Zhai, in Chinese "翟羽".  I was born in 1993 at Huaiyin, PRChina.  Now I live in Changchun, PRChina, studying and working in Jilin University, interested in Theoretical Chemistry.  What I believe is that science and art save the world.  </p>
 </div>
