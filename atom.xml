@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-02-25T10:18:17.480Z</updated>
+  <updated>2015-02-26T17:54:46.135Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -13,6 +13,38 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Don't be afraid of using new social networks]]></title>
+    <link href="http://zhaiyu-zhaiyu.github.io/2015/02/27/Don-t-be-afraid-of-using-new-social-networks/"/>
+    <id>http://zhaiyu-zhaiyu.github.io/2015/02/27/Don-t-be-afraid-of-using-new-social-networks/</id>
+    <published>2015-02-26T16:55:34.000Z</published>
+    <updated>2015-02-26T17:54:30.734Z</updated>
+    <content type="html"><![CDATA[<p><img src="friends.jpg" alt="Portrait of Two Friends by Italian artist Pontormo, c. 1522"></p>
+<p>That was a month ago, I find <a href="https://telegram.org/" target="_blank" rel="external">Telegram</a> is a good new tool to communicate with my friends.  The encryption and privacy things are all satisfying me.  </p>
+<p><u>I signed up…I had an account…<strong>I had no contact in it</strong></u></p>
+<p>I know, it’s always a problem that none of your friend join in.  For me, it’s a problem.</p>
+<p>At least, the same problem came up when I am ready to use <a href="https://www.path.com/" target="_blank" rel="external">Path</a>.</p>
+<p>We are not leader in a little group, even we are, we would not use the tiny power to force our friends to use a new tool.  What we do is listing the advantages of the new tool and persuade friends into using it.  Fail a lot?  Aye, that’s true.</p>
+<p>But here are some reasons for you to use new communicating tool or network:</p>
+<ul>
+<li>The reason why you are willing to use the new thing.</li>
+<li>The same habit and attitude towards innovation shared between you and your friend.</li>
+<li>The fact that a true loving friend would try your suggestion and even there is only one contact in his/her list, which is you, he/she would keep the app in the phone.</li>
+</ul>
+<p>I would call the 3 lines above <strong>Y.’s Standard of Friendship</strong>.</p>
+<p>So I have few friends.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="friends.jpg" alt="Portrait of Two Friends by Italian artist Pontormo, c. 1522"></p>
+<p>That was a month ago, I find <a href="ht]]>
+    </summary>
+    
+      <category term="life" scheme="http://zhaiyu-zhaiyu.github.io/tags/life/"/>
+    
+      <category term="IT" scheme="http://zhaiyu-zhaiyu.github.io/tags/IT/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Recommend a coding game on Android phone]]></title>
@@ -36,37 +68,6 @@
     </summary>
     
       <category term="IT" scheme="http://zhaiyu-zhaiyu.github.io/tags/IT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://zhaiyu-zhaiyu.github.io/2015/02/23/hello-world/"/>
-    <id>http://zhaiyu-zhaiyu.github.io/2015/02/23/hello-world/</id>
-    <published>2015-02-23T06:56:40.909Z</published>
-    <updated>2015-02-22T20:00:11.842Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
     
   </entry>
   
