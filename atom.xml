@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-02-26T17:54:46.135Z</updated>
+  <updated>2015-03-02T05:23:33.084Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -13,6 +13,68 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Learn CSS (1)]]></title>
+    <link href="http://zhaiyu-zhaiyu.github.io/2015/03/02/Learn-CSS-1/"/>
+    <id>http://zhaiyu-zhaiyu.github.io/2015/03/02/Learn-CSS-1/</id>
+    <published>2015-03-02T04:51:00.000Z</published>
+    <updated>2015-03-02T05:22:27.818Z</updated>
+    <content type="html"><![CDATA[<p>This series of posts is kind of notes during my learning site-building.  And, about CSS.<br><img src="cup.jpg" alt="CSS cup"></p>
+<p>CSS is short for <strong>Cascading Style Sheets</strong>, but I do not understand it, nor know how to spell it.  I copy it from the <a href="http://www.w3school.com.cn/css/css_intro.asp" target="_blank" rel="external">site</a>.</p>
+<p>We shall start.</p>
+<h1 id="Selector">Selector</h1>
+<p><strong>Selector</strong> is used to select the element in the html file whose style will be defined in the following sentences.</p>
+<p>Valid selector can be in the following form:</p>
+<ul>
+<li>by type</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">p</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>by id</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="id">#user-name</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>by class</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="class">.marketingprop</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>by state</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">a</span><span class="pseudo">:link</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>by property</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr_selector">[title="hello"]</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>by whatever</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">div</span> <span class="id">#abstract</span> <span class="tag">span</span> <span class="id">#title</span><span class="rules">{<span class="rule">}</span></span> <span class="comment">/* the span whose id is 'title' belonging to the div whose id is 'abstract'*/</span></div></pre></td></tr></table></figure>
+
+<h1 id="How_to_use_a_css_file">How to use a css file</h1>
+<h2 id="inside_html">inside html</h2>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"></span></div><div class="line">  <span class="tag">hr</span> <span class="rules">{<span class="rule"><span class="attribute">color</span>:<span class="value"> sienna</span></span>;<span class="rule">}</span></span></div><div class="line">  <span class="tag">p</span> <span class="rules">{<span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">20px</span></span></span>;<span class="rule">}</span></span></div><div class="line">  <span class="tag">body</span> <span class="rules">{<span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">"images/back40.gif"</span>)</span></span>;<span class="rule">}</span></span></div><div class="line"><span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<h2 id="outside_html">outside html</h2>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"mystyle.css"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>I think it has been enough for today.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This series of posts is kind of notes during my learning site-building.  And, about CSS.<br><img src="cup.jpg" alt="CSS cup"></p>
+<p>CSS ]]>
+    </summary>
+    
+      <category term="CSS" scheme="http://zhaiyu-zhaiyu.github.io/tags/CSS/"/>
+    
+      <category term="site-building" scheme="http://zhaiyu-zhaiyu.github.io/tags/site-building/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Don't be afraid of using new social networks]]></title>
