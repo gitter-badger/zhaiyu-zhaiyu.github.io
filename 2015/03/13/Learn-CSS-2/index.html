@@ -3,21 +3,46 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Learn CSS (1) | Pages of Y.&#39;s</title>
+  <title>Learn CSS (2) | Pages of Y.&#39;s</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This series of posts is kind of notes during my learning site-building.  And, about CSS.
-CSS is short for Cascading Style Sheets, but I do not understand it, nor know how to spell it.  I copy it from">
+Text
+To stylize a bounch of text, there are two ways:
+
+inline
+css
+Just say something about css.
+
+
+Put a set of">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Learn CSS (1)">
-<meta property="og:url" content="http://zhaiyu-zhaiyu.github.io/2015/03/02/Learn-CSS-1/">
+<meta property="og:title" content="Learn CSS (2)">
+<meta property="og:url" content="http://zhaiyu-zhaiyu.github.io/2015/03/13/Learn-CSS-2/">
 <meta property="og:site_name" content="Pages of Y.'s">
 <meta property="og:description" content="This series of posts is kind of notes during my learning site-building.  And, about CSS.
-CSS is short for Cascading Style Sheets, but I do not understand it, nor know how to spell it.  I copy it from">
+Text
+To stylize a bounch of text, there are two ways:
+
+inline
+css
+Just say something about css.
+
+
+Put a set of">
 <meta property="og:image" content="cup.jpg">
+<meta property="og:image" content="eg1.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Learn CSS (1)">
+<meta name="twitter:title" content="Learn CSS (2)">
 <meta name="twitter:description" content="This series of posts is kind of notes during my learning site-building.  And, about CSS.
-CSS is short for Cascading Style Sheets, but I do not understand it, nor know how to spell it.  I copy it from">
+Text
+To stylize a bounch of text, there are two ways:
+
+inline
+css
+Just say something about css.
+
+
+Put a set of">
 
   
   
@@ -79,7 +104,7 @@ CSS is short for Cascading Style Sheets, but I do not understand it, nor know ho
             </div>
             <div class="main-body-content">
               
-  <article id="post-Learn-CSS-1" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <article id="post-Learn-CSS-2" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
       <!--  -->
       
@@ -87,66 +112,35 @@ CSS is short for Cascading Style Sheets, but I do not understand it, nor know ho
           
   
     <h1 class="article-title" itemprop="name">
-      Learn CSS (1)
+      Learn CSS (2)
     </h1>
   
 
         </header>
       
       <p class="article-byline">
-        <a href="/2015/03/02/Learn-CSS-1/" class="article-date">
-  <time datetime="2015-03-02T04:51:00.000Z" itemprop="datePublished">Mar 2 2015</time>
+        <a href="/2015/03/13/Learn-CSS-2/" class="article-date">
+  <time datetime="2015-03-13T04:51:00.000Z" itemprop="datePublished">Mar 13 2015</time>
 </a>
       </p>
       <div class="article-entry" itemprop="articleBody">
         <p>This series of posts is kind of notes during my learning site-building.  And, about CSS.<br><img src="cup.jpg" alt="CSS cup"></p>
-<p>CSS is short for <strong>Cascading Style Sheets</strong>, but I do not understand it, nor know how to spell it.  I copy it from the <a href="http://www.w3school.com.cn/css/css_intro.asp" target="_blank" rel="external">site</a>.</p>
-<p>We shall start.</p>
-<h1 id="Selector">Selector</h1>
-<p><strong>Selector</strong> is used to select the element in the html file whose style will be defined in the following sentences.</p>
-<p>Valid selector can be in the following form:</p>
+<h1 id="Text">Text</h1>
+<p>To stylize a bounch of text, there are two ways:</p>
 <ul>
-<li>by type</li>
+<li>inline</li>
+<li><p>css</p>
+<p>Just say something about css.</p>
+</li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">p</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
+<p>Put a set of text in the tag<code>&lt;span class=&quot;notice&quot;&gt;</code>…<code>&lt;/span&gt;</code>.  After that, we can use CSS to set all text under the class <code>notice</code> like this:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class">.notice</span><span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">font-family</span>:<span class="value"> Helvetica, Arial,<span class="string">"Times New Roman"</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">color</span>:<span class="value">red</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">text-shadow</span>:<span class="value"><span class="number">1px</span> <span class="number">1px</span> <span class="number">1px</span> black</span></span>;</div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
 
-<ul>
-<li>by id</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="id">#user-name</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
-
-<ul>
-<li>by class</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="class">.marketingprop</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
-
-<ul>
-<li>by state</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">a</span><span class="pseudo">:link</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
-
-<ul>
-<li>by property</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr_selector">[title="hello"]</span><span class="rules">{<span class="rule">}</span></span></div></pre></td></tr></table></figure>
-
-<ul>
-<li>by whatever</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">div</span> <span class="id">#abstract</span> <span class="tag">span</span> <span class="id">#title</span><span class="rules">{<span class="rule">}</span></span> <span class="comment">/* the span whose id is 'title' belonging to the div whose id is 'abstract'*/</span></div></pre></td></tr></table></figure>
-
-<h1 id="How_to_use_a_css_file">How to use a css file</h1>
-<h2 id="inside_html">inside html</h2>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"></span></div><div class="line">  <span class="tag">hr</span> <span class="rules">{<span class="rule"><span class="attribute">color</span>:<span class="value"> sienna</span></span>;<span class="rule">}</span></span></div><div class="line">  <span class="tag">p</span> <span class="rules">{<span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">20px</span></span></span>;<span class="rule">}</span></span></div><div class="line">  <span class="tag">body</span> <span class="rules">{<span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">"images/back40.gif"</span>)</span></span>;<span class="rule">}</span></span></div><div class="line"><span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div></pre></td></tr></table></figure>
-
-<h2 id="outside_html">outside html</h2>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"mystyle.css"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div></pre></td></tr></table></figure>
-
-<p>I think it has been enough for today.</p>
+<p>And it turns out like this:<br><img src="eg1.png" alt="eg1"><br>See you next time~</p>
 
       </div>
       <footer class="article-footer">
-        <a data-url="http://zhaiyu-zhaiyu.github.io/2015/03/02/Learn-CSS-1/" data-id="9zkyl24hltiy4bzq" class="article-share-link">Share</a>
+        <a data-url="http://zhaiyu-zhaiyu.github.io/2015/03/13/Learn-CSS-2/" data-id="1h3c1yplhie037ge" class="article-share-link">Share</a>
         
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/site-building/">site-building</a></li></ul>
@@ -180,20 +174,10 @@ CSS is short for Cascading Style Sheets, but I do not understand it, nor know ho
     
 <nav id="article-nav">
   
-    <a href="/2015/03/05/Blank-Space-ahead-of-the-Locationbar-of-Firefox/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
-      <p class="article-nav-title">
-        
-          Blank Space ahead of the Locationbar of Firefox
-        
-      </p>
-      <i class="icon" id="icon-chevron-right"></i>
-    </a>
   
-  
-    <a href="/2015/02/27/Don-t-be-afraid-of-using-new-social-networks/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/03/13/Learn-CSS-2/tmp/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">older</strong>
-      <p class="article-nav-title">Don&#39;t be afraid of using new social networks</p>
+      <p class="article-nav-title"></p>
       <i class="icon" id="icon-chevron-left"></i>
     </a>
   
