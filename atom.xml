@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-03-15T06:49:27.757Z</updated>
+  <updated>2015-03-21T09:30:41.852Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -13,6 +13,24 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[something unimportant]]></title>
+    <link href="http://zhaiyu-zhaiyu.github.io/2015/03/21/something-unimportant/"/>
+    <id>http://zhaiyu-zhaiyu.github.io/2015/03/21/something-unimportant/</id>
+    <published>2015-03-21T09:27:48.000Z</published>
+    <updated>2015-03-21T09:30:29.659Z</updated>
+    <content type="html"><![CDATA[<p>Say, I am building the website for our research group.  And, the hexo engine is somehow not work well as when I build it. </p>
+<p>After I finish the job, maybe I would put the site as a friendly link.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Say, I am building the website for our research group.  And, the hexo engine is somehow not work well as when I build it. </p>
+<p>After I]]>
+    </summary>
+    
+      <category term="Life" scheme="http://zhaiyu-zhaiyu.github.io/tags/Life/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Learn CSS (2)]]></title>
