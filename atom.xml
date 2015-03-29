@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-03-21T09:30:41.852Z</updated>
+  <updated>2015-03-29T15:17:12.997Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -13,6 +13,34 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Let me fix it]]></title>
+    <link href="http://zhaiyu-zhaiyu.github.io/2015/03/29/Let-me-fix-it/"/>
+    <id>http://zhaiyu-zhaiyu.github.io/2015/03/29/Let-me-fix-it/</id>
+    <published>2015-03-29T15:01:03.000Z</published>
+    <updated>2015-03-29T15:16:56.833Z</updated>
+    <content type="html"><![CDATA[<p>Today I found an old program which lack what I want.</p>
+<p>Let me fix it!</p>
+<p>If you wanna fit pointwise potential energies into a curve like MLR, it’s a good choice to use our program.  But you must type in the initial guess values of De, Re, etc.</p>
+<p>I add some lines of code to let the program find the Re for you.  It’s easy, for you just need to find the minima of given energy.</p>
+<p>However, if you wanna fit a family of curves, it’s a disaster.  You would do the easy but boring work for like 1000 times.</p>
+<p>I will save your time.</p>
+<p>And your happiness.</p>
+<p>I am a lazy person.  SO I WOULD NOT DO THE BORING JOB.  We should not use the program as it is. </p>
+<p>Now the work is not finished. I should bring the parameters of electrostatic part out, not in code.</p>
+<p>Work will continue, or I leave the job to the younger students.</p>
+<p>And remember, if you want to change the code, leave comments in it.  And, if time’s abundant, <strong>write a manual</strong>.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Today I found an old program which lack what I want.</p>
+<p>Let me fix it!</p>
+<p>If you wanna fit pointwise potential energies into a cu]]>
+    </summary>
+    
+      <category term="Work" scheme="http://zhaiyu-zhaiyu.github.io/tags/Work/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[something unimportant]]></title>
