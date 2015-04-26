@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-04-08T15:50:36.240Z</updated>
+  <updated>2015-04-26T14:35:04.603Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -13,6 +13,48 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[New domain name]]></title>
+    <link href="http://zhaiyu-zhaiyu.github.io/2015/04/26/New-domain-name/"/>
+    <id>http://zhaiyu-zhaiyu.github.io/2015/04/26/New-domain-name/</id>
+    <published>2015-04-26T13:55:09.000Z</published>
+    <updated>2015-04-26T14:28:46.039Z</updated>
+    <content type="html"><![CDATA[<p>As they told me, if you wanna starting sth., you’d better pay for it.</p>
+<p>And you will not fail it for the money you have paid.</p>
+<p>Reasonable.  </p>
+<p>So I buy a domain online and resolve it to my blog on github.</p>
+<p>I am going to renew my blog once a week, I guess.  But who knows?  Perhaps someday I get busy suddenly and stop it.  </p>
+<hr>
+<p>Well, since I have done the same thing twice this days, anyway I am kind of ‘expert’ as you said.  So I would show you, in this post, how to buy a domain and bind it with you blog.  It can be found any where, but, it’s more brief here.</p>
+<ul>
+<li><p>First thing first, you build a blog on a site like github.  If you are a guy from China mainland, you may prefer gitcafe.  I mean, due to the Internet management in China P. R., you may think it’s more safe to build it on a native website.  But if you are a guy like me, who believe there should be no boundary in the world,  you may choice a more mature website like github.  That’s your freedom.</p>
+</li>
+<li><p>To build a blog, you can choose a framework.  I am using <a href="http://hexo.io/" target="_blank" rel="external">hexo</a>. I think it’s easy to use.  But if you are even more lasier than me (Oh! I cannot believe it!),  tumblr is a good choice.  As I know it give the user the freedom to choice your own domain. </p>
+</li>
+<li><p>Then, buy a domain.  I bought one on 万网, if you like to know.  And it’s OK if you buy from another firm.</p>
+</li>
+<li><p>Add a resolve record.  Set type as <code>CNAME</code>, domain as <code>zhaiyu-zhaiyu.github.io</code> for me, remember to change the domain to your own blog. If yours is on github as well, it should be <i>username</i><code>.github.io</code>.  Keep the other term as default.</p>
+</li>
+<li><p>Last thing, add a file named <code>CNAME</code>, in which there is an only line record the domain you bought before.</p>
+</li>
+</ul>
+<p>Tada!  Test your new domain.  If it does not work, check the details. (If you really do not know the things on the github side, you’re welcome to see how I make it on my blog <a href="https://github.com/zhaiyu-zhaiyu/zhaiyu-zhaiyu.github.io" target="_blank" rel="external">repo</a>.) </p>
+<p><img src="keep.png" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>As they told me, if you wanna starting sth., you’d better pay for it.</p>
+<p>And you will not fail it for the money you have paid.</p>
+<p]]>
+    </summary>
+    
+      <category term="IT" scheme="http://zhaiyu-zhaiyu.github.io/tags/IT/"/>
+    
+      <category term="life" scheme="http://zhaiyu-zhaiyu.github.io/tags/life/"/>
+    
+      <category term="Blog" scheme="http://zhaiyu-zhaiyu.github.io/tags/Blog/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Get Cold]]></title>
