@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-04-26T14:35:04.603Z</updated>
+  <updated>2015-04-27T13:26:29.361Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://zhaiyu-zhaiyu.github.io/2015/04/26/New-domain-name/"/>
     <id>http://zhaiyu-zhaiyu.github.io/2015/04/26/New-domain-name/</id>
     <published>2015-04-26T13:55:09.000Z</published>
-    <updated>2015-04-26T14:28:46.039Z</updated>
-    <content type="html"><![CDATA[<p>As they told me, if you wanna starting sth., you’d better pay for it.</p>
+    <updated>2015-04-26T14:38:58.870Z</updated>
+    <content type="html"><![CDATA[<p>As they told me, if you wanna start sth., you’d better pay for it.</p>
 <p>And you will not fail it for the money you have paid.</p>
 <p>Reasonable.  </p>
 <p>So I buy a domain online and resolve it to my blog on github.</p>
@@ -43,9 +43,9 @@
 <p><img src="keep.png" alt=""></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>As they told me, if you wanna starting sth., you’d better pay for it.</p>
+    <![CDATA[<p>As they told me, if you wanna start sth., you’d better pay for it.</p>
 <p>And you will not fail it for the money you have paid.</p>
-<p]]>
+<p>Re]]>
     </summary>
     
       <category term="IT" scheme="http://zhaiyu-zhaiyu.github.io/tags/IT/"/>
@@ -161,10 +161,10 @@
     <link href="http://zhaiyu-zhaiyu.github.io/2015/03/05/Blank-Space-ahead-of-the-Locationbar-of-Firefox/"/>
     <id>http://zhaiyu-zhaiyu.github.io/2015/03/05/Blank-Space-ahead-of-the-Locationbar-of-Firefox/</id>
     <published>2015-03-05T08:37:31.000Z</published>
-    <updated>2015-03-05T08:53:02.068Z</updated>
+    <updated>2015-04-27T13:25:36.240Z</updated>
     <content type="html"><![CDATA[<p>The problem is like something below.<br><img src="blank.png" alt="blank of the locationbar"></p>
 <p>Even you reinstall fx, or use “refresh your firefox”, the problem won’t solve.</p>
-<p>The reason is that as a Lenovo V480 user, the finger printer sensor is drived by a driver produced by AuthenTec Inc.</p>
+<p>The reason is that as a Lenovo V480 user, I have a finger printer sensor drived by a driver produced by AuthenTec Inc.</p>
 <p>But the Inc. has been acquired by Apple Inc. Apparently, the version I used lead to the question is bugged and the key to solve it is uninstall the driver (since I do not need a finger print device).  <em>But for those who want to use the authentic device, it’s a problem.</em></p>
 <p>A friend from Mozilla China told me that it’s hobo way to change things by adding css in bundle folder.  But anyway, I cannot even send them a email to report the problem.  Their website has been closed.</p>
 <p>Any way, this <a href="http://forums.mozillazine.org/viewtopic.php?f=38&amp;t=2754461" target="_blank" rel="external">link</a> told us the way to solve the question.  Read it for details. Or just uninstall the fingerprinting thing if not a user.</p>
