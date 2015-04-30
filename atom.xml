@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-04-30T07:41:50.401Z</updated>
+  <updated>2015-04-30T07:46:28.420Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -19,12 +19,12 @@
     <link href="http://zhaiyu-zhaiyu.github.io/2015/04/30/Something-about-editors/"/>
     <id>http://zhaiyu-zhaiyu.github.io/2015/04/30/Something-about-editors/</id>
     <published>2015-04-30T07:30:25.000Z</published>
-    <updated>2015-04-30T07:41:22.348Z</updated>
+    <updated>2015-04-30T07:46:07.150Z</updated>
     <content type="html"><![CDATA[<p>Very recently, Microsoft annouced the new toy of coder: <a href="https://www.visualstudio.com/products/code-vs" target="_blank" rel="external">Visual Studio Code</a>.</p>
 <p>So I install it.  See around and uninstall it.</p>
 <p>I think it’s OK, but you know I am a vim user.  You know vim is unique for it will never let you to turn on to another editor if you are familiar with it.  The sequence of key striking is awsome and the way is different from other editor like emacs and others.  </p>
 <p>I mean, they do not have mode which can work with me well.</p>
-<p>Both kinds are good but there is a saddle point between them.  Once you love on you would not like the other.</p>
+<p>Both kinds are good but there is a saddle point between them.  Once you love one you would not like the other.</p>
 <p>That’s all.</p>
 ]]></content>
     <summary type="html">
