@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-05-24T14:17:48.675Z</updated>
+  <updated>2015-05-24T14:22:47.204Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -19,14 +19,14 @@
     <link href="http://zhaiyu-zhaiyu.github.io/2015/05/24/Vim-mindmap/"/>
     <id>http://zhaiyu-zhaiyu.github.io/2015/05/24/Vim-mindmap/</id>
     <published>2015-05-24T13:59:02.000Z</published>
-    <updated>2015-05-24T14:17:14.049Z</updated>
+    <updated>2015-05-24T14:21:53.659Z</updated>
     <content type="html"><![CDATA[<p><img src="vim.png" alt="Vim mind map"></p>
 <p>It’s happy to hear from Mr. Joe Martinez.  I asked him if I can translate his masterpiece of VIM mind map and he said yes.</p>
 <p>So here is my translation.</p>
 <p>很高兴收到 Joe Martinez 先生的许可（虽然他明确在博客上表示可以修改发布但是出于尊敬我还是发邮件问一下）。我这里将他的 vim mindmap <a href="http://jrmiii.com/2009/03/06/learning-vim-the-pragmatic-way.html" target="_blank" rel="external">http://jrmiii.com/2009/03/06/learning-vim-the-pragmatic-way.html</a> 翻译了并且发布在这里。</p>
 <p>如果愿意基于我的这份翻译再做点提高的工作，比如觉得有些命令也很重要为什么没有列在这里，欢迎修改。</p>
 <p>但是由于我个人比较熟悉 Xmind 所以，我的源文件是 Xmind 格式的。需要的话给我发个邮件索取源文件吧。（但是问题是也许你熟悉其他的软件所以我没有直接把这份源文件放在这里，而且其实是我忘记把源文件从工位拷回家了……）</p>
-<h1 id="点此下载_|_Click_here_to_download_VIM_-_Vi_IMproved-pdf">点此下载 | Click here to download <a href="http://zhaiyusci.net/download/vimmm133.pdf/" target="_blank" rel="external">VIM - Vi IMproved.pdf</a></h1>
+<h1 id="点此下载_|_Click_here_to_download_VIM_-_Vi_IMproved-pdf">点此下载 | Click here to download <a href="vimmm133.pdf">VIM - Vi IMproved.pdf</a></h1>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><img src="vim.png" alt="Vim mind map"></p>
