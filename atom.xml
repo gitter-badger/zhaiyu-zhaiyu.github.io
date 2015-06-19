@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Studying - Reading - Thinking]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zhaiyu-zhaiyu.github.io/"/>
-  <updated>2015-06-17T10:48:44.362Z</updated>
+  <updated>2015-06-19T15:25:20.173Z</updated>
   <id>http://zhaiyu-zhaiyu.github.io/</id>
   
   <author>
@@ -13,6 +13,32 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Compile Emacs]]></title>
+    <link href="http://zhaiyu-zhaiyu.github.io/2015/06/19/Compile-Emacs/"/>
+    <id>http://zhaiyu-zhaiyu.github.io/2015/06/19/Compile-Emacs/</id>
+    <published>2015-06-19T14:57:47.000Z</published>
+    <updated>2015-06-19T15:24:57.827Z</updated>
+    <content type="html"><![CDATA[<p>Well, actually, I am a Vimmer.</p>
+<p>But Prof. Nooijen from University of Waterloo visits us these days and he says he can only use Emacs.</p>
+<p>Well…</p>
+<p>If your server is not connect to the Internet, you cannot simply use <code>sudo apt-get install emacs</code>.  Or <code>sudo zypper install emacs</code> if you are a SUSE user.</p>
+<p>First thing first you should compile one from source code.  The most important thing to do is configure.</p>
+<p>For those who do calculation via CLI (like us), you should <code>cd</code> to the emacs source directory and type in <code>./configure --without-all --without-x</code>. </p>
+<p>Then you can <code>make</code> and <code>make install</code>.</p>
+<p>I think installation of Emacs is much easier than that of Vim.  Things above is what you should do if you are new guy.</p>
+<p>Remember <code>chmod 777</code> those scripts according to the error message.</p>
+<p><img src="e.png" alt="emacs"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Well, actually, I am a Vimmer.</p>
+<p>But Prof. Nooijen from University of Waterloo visits us these days and he says he can only use Emac]]>
+    </summary>
+    
+      <category term="Editor" scheme="http://zhaiyu-zhaiyu.github.io/tags/Editor/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Highlight current line in VIM]]></title>
